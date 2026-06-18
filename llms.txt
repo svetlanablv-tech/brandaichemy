@@ -1,0 +1,36 @@
+# BrandAIchemy
+
+> Commercial clarity practice for e-commerce brands. Operated by Ecomlana Ltd, London.
+
+BrandAIchemy identifies where e-commerce brands, stores, and product logic fail to create confident buyer choice — and rebuilds the system so buyers, search engines, and AI models can clearly understand why to choose them.
+
+## What BrandAIchemy does
+
+BrandAIchemy is not an AI agency, SEO service, or Shopify studio. It is a commercial clarity practice built around one question: why does a brand look optimized but still not become chosen?
+
+We work with two types of clients:
+- Brands where the brand itself isn't being chosen (positioning, trust, differentiation failures)
+- Brands where individual products aren't being chosen (product data, catalogue logic, comparison failures)
+
+## Services
+
+- **Brand Clarity Diagnosis** (from £1,500): identifies where the brand fails to create trust, differentiation, and a clear reason to be chosen. For Shopify, Amazon, Etsy, DTC, and founder-led brands.
+- **Product Choice Diagnosis** (from £2,000): finds where product data, filters, and card logic prevent buyers from making a confident decision. For B2B, catalogues, technical categories, Amazon-heavy brands.
+- **Choice Architecture** (from £5,000): full strategic rebuild of positioning, trust structure, store logic, and product pages.
+- **Full Implementation** (from £8,000): strategy plus execution — Shopify rebuild, product pages, content structure, AI-readable architecture.
+
+## Company
+
+- Legal name: Ecomlana Ltd (Company No. 11189261)
+- Address: 4th Floor, Silverstream House, 45 Fitzroy Street, London, W1T 6EB
+- Email: hello@brandaichemy.com
+- Website: https://brandaichemy.com
+
+## Pages
+
+- [Home](https://brandaichemy.com/)
+- [Services](https://brandaichemy.com/services.html)
+- [About](https://brandaichemy.com/about.html)
+- [Contact](https://brandaichemy.com/contact.html)
+- [Privacy Policy](https://brandaichemy.com/privacy-policy.html)
+- [Terms of Service](https://brandaichemy.com/terms.html)

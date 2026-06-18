@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — BrandAIchemy</title>
+  <meta name="description" content="BrandAIchemy is a commercial clarity practice for e-commerce brands. We work at the intersection of brand, buyer behaviour, store architecture, and AI readability.">
+  <link rel="stylesheet" href="style.css">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://brandaichemy.com/about.html">
+  <meta property="og:title" content="About — BrandAIchemy">
+  <meta property="og:description" content="BrandAIchemy is a commercial clarity practice for e-commerce brands, operated by Ecomlana Ltd, London.">
+  <meta property="og:url" content="https://brandaichemy.com/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BrandAIchemy">
+  <meta property="og:image" content="https://brandaichemy.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "url": "https://brandaichemy.com/about.html",
+    "name": "About BrandAIchemy",
+    "description": "BrandAIchemy is a commercial clarity practice for e-commerce brands, operated by Ecomlana Ltd, London.",
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://brandaichemy.com/#organization",
+      "name": "BrandAIchemy",
+      "legalName": "Ecomlana Ltd",
+      "url": "https://brandaichemy.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4th Floor, Silverstream House, 45 Fitzroy Street",
+        "addressLocality": "London",
+        "postalCode": "W1T 6EB",
+        "addressCountry": "GB"
+      },
+      "email": "hello@brandaichemy.com",
+      "foundingLocation": "London, UK",
+      "knowsAbout": ["E-commerce strategy", "Brand positioning", "Commercial clarity", "Shopify", "Amazon", "AI readability", "Choice architecture"]
+    }
+  }
+  </script>
+  <style>
+    .about-intro {
+      padding: 7rem var(--pad);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7rem;
+      align-items: start;
+    }
+    .about-intro-right {
+      padding-top: .5rem;
+    }
+    .about-intro-right p {
+      font-size: 1.0625rem;
+      color: var(--dim);
+      line-height: 1.85;
+      margin-bottom: 1.25rem;
+    }
+
+    .principles { padding: 7rem var(--pad); background: var(--surface); }
+    .principles-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 4rem;
+      margin-top: 4.5rem;
+    }
+    .principle-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 4rem;
+      font-weight: 300;
+      color: rgba(201,168,122,.18);
+      line-height: 1;
+      margin-bottom: 1.5rem;
+    }
+    .principle-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.75rem;
+      font-weight: 400;
+      margin-bottom: .875rem;
+    }
+    .principle-desc { font-size: .9375rem; color: var(--dim); line-height: 1.75; }
+
+    .pull-quote {
+      padding: 7rem var(--pad);
+      border-top: 1px solid var(--gold-line);
+      border-bottom: 1px solid var(--gold-line);
+    }
+    .pull-quote blockquote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.3;
+      max-width: 860px;
+      color: var(--white);
+    }
+    .pull-quote blockquote span { color: var(--gold); font-style: normal; }
+
+    .credentials { padding: 7rem var(--pad); }
+    .cred-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 1.5rem;
+      margin-top: 3.75rem;
+    }
+    .cred {
+      border: 1px solid var(--gold-line);
+      border-radius: 3px;
+      padding: 2rem 1.75rem;
+    }
+    .cred-label {
+      font-size: .6875rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--gold);
+      margin-bottom: .75rem;
+    }
+    .cred-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.3;
+    }
+
+    .why-section { padding: 7rem var(--pad); background: var(--surface); }
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      margin-top: 4rem;
+      align-items: start;
+    }
+    .why-text p {
+      font-size: 1.0625rem;
+      color: var(--dim);
+      line-height: 1.85;
+      margin-bottom: 1.25rem;
+    }
+    .why-stats { display: flex; flex-direction: column; gap: 2rem; }
+    .stat { border-left: 2px solid var(--gold-dim); padding-left: 2rem; }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: .375rem;
+    }
+    .stat-desc { font-size: .875rem; color: var(--dim); line-height: 1.6; }
+
+    .cta-strip {
+      background: var(--black);
+      border-top: 1px solid var(--gold-line);
+      padding: 6rem var(--pad);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+    .cta-strip .serif-lg { margin-bottom: 0; }
+
+    @media (max-width: 900px) {
+      .about-intro { grid-template-columns: 1fr; gap: 3rem; }
+      .principles-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .cred-grid { grid-template-columns: 1fr 1fr; }
+      .why-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .cta-strip { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 520px) {
+      .cred-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="solid">
+  <a href="index.html" class="logo">Brand<span>AI</span>chemy</a>
+  <ul class="nav-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="contact.html" class="nav-cta">Book a call</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <p class="label">About</p>
+  <h1 class="serif-lg">Commercial clarity is not<br>a design problem.</h1>
+  <p class="body-text">It's a structural one. BrandAIchemy is a practice built to diagnose and rebuild the system through which e-commerce brands create choice.</p>
+</div>
+
+<section class="about-intro">
+  <div>
+    <p class="label">What we are</p>
+    <h2 class="serif-lg fi">A practice built at the intersection of brand, buyer behaviour, and AI readability.</h2>
+  </div>
+  <div class="about-intro-right fi" style="transition-delay:.1s">
+    <p>BrandAIchemy is not a branding agency, a Shopify studio, or an SEO service. It is a commercial clarity practice — a discipline built around one question: why does a brand, store, or product fail to create confident choice in the buyer's mind?</p>
+    <p>We work with e-commerce brands that are already visible, already active, already investing in optimization — but not converting. Traffic without purchases. Products without decisions. Brands that sound like everyone else in the category.</p>
+    <p>Our work is diagnostic first and structural second. We identify where choice fails, explain why, connect every observation to commercial consequence, and rebuild the system so that the brand becomes clearly understandable — to buyers, to search engines, and to AI models that increasingly mediate discovery and recommendation.</p>
+    <p>We are based in London and work internationally with brands on Shopify, Amazon, Etsy, and direct-to-consumer channels.</p>
+  </div>
+</section>
+
+<div class="pull-quote">
+  <blockquote class="fi">
+    "Most brands don't have an optimization problem.<br>
+    They have a <span>clarity problem.</span><br>
+    And no amount of optimization fixes an unclear brand."
+  </blockquote>
+</div>
+
+<section class="principles">
+  <p class="label">Our approach</p>
+  <h2 class="serif-lg fi">Three principles<br>we don't compromise on.</h2>
+  <div class="principles-grid">
+    <div class="fi">
+      <div class="principle-num">01</div>
+      <h3 class="principle-title">Diagnosis before prescription</h3>
+      <p class="principle-desc">We don't arrive with a template. Every engagement starts with a structured diagnosis — a precise reading of where choice fails in your specific brand, store, and product logic. We don't recommend before we understand.</p>
+    </div>
+    <div class="fi" style="transition-delay:.12s">
+      <div class="principle-num">02</div>
+      <h3 class="principle-title">Commercial consequence, not best practice</h3>
+      <p class="principle-desc">Every observation we make is connected to a commercial outcome. Not "your UVP could be clearer" — but "this is why buyers are choosing on price and what it's costing you." Observations without stakes don't change anything.</p>
+    </div>
+    <div class="fi" style="transition-delay:.24s">
+      <div class="principle-num">03</div>
+      <h3 class="principle-title">Systems, not tactics</h3>
+      <p class="principle-desc">We rebuild the structure through which a brand creates choice — not individual pages or copy blocks. Positioning, trust, product logic, store architecture, and AI readability need to work as one coherent system. Isolated tactics don't fix structural problems.</p>
+    </div>
+  </div>
+</section>
+
+<section class="why-section">
+  <p class="label">Why commercial clarity matters now</p>
+  <div class="why-grid">
+    <div class="why-text fi">
+      <p>AI has changed the cost structure of e-commerce marketing. Content, strategy, and optimization are cheaper than ever to produce. The result is a market flooded with brands that are technically well-optimized but commercially indistinguishable.</p>
+      <p>When every brand uses the same AI-generated research to find the same keywords, write the same copy, and target the same audiences, optimization stops being a differentiator. Clarity becomes one.</p>
+      <p>A brand with a clear, convincing, and structurally sound reason to be chosen performs better in search, in AI recommendation systems, in paid channels, and in organic conversion — not because it has been optimized differently, but because it actually says something that matters to the right buyer.</p>
+      <p>That's what BrandAIchemy builds.</p>
+    </div>
+    <div class="why-stats fi" style="transition-delay:.15s">
+      <div class="stat">
+        <div class="stat-num">£0</div>
+        <p class="stat-desc">The return on optimization applied to a brand without a clear reason to be chosen.</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num">AI</div>
+        <p class="stat-desc">AI doesn't create clarity. It amplifies the signal that's already there — or reveals the absence of one.</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num">1 Q</div>
+        <p class="stat-desc">Every buyer asks one question: why choose this, and not something else? If the brand can't answer it clearly, it loses.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="credentials">
+  <p class="label">Credentials</p>
+  <h2 class="serif-lg fi">Built on real<br>e-commerce experience.</h2>
+  <div class="cred-grid">
+    <div class="cred fi">
+      <p class="cred-label">Partnership</p>
+      <p class="cred-text">Official Shopify Partner</p>
+    </div>
+    <div class="cred fi" style="transition-delay:.08s">
+      <p class="cred-label">Partnership</p>
+      <p class="cred-text">Amazon Certified</p>
+    </div>
+    <div class="cred fi" style="transition-delay:.16s">
+      <p class="cred-label">Accreditation</p>
+      <p class="cred-text">CPD Accredited</p>
+    </div>
+    <div class="cred fi" style="transition-delay:.24s">
+      <p class="cred-label">Recognition</p>
+      <p class="cred-text">Best E-Commerce Education UK 2025</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta-strip">
+  <h2 class="serif-lg">Ready to find where<br>choice breaks down?</h2>
+  <a href="contact.html" class="btn-gold">Start with a diagnosis</a>
+</div>
+
+<footer>
+  <a href="index.html" class="foot-logo">Brand<span>AI</span>chemy</a>
+  <ul class="foot-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+  </ul>
+  <span class="foot-copy">© 2025 BrandAIchemy</span>
+</footer>
+
+<script>
+  const io = new IntersectionObserver(e => e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('on'); io.unobserve(x.target); } }), { threshold: 0.1 });
+  document.querySelectorAll('.fi').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

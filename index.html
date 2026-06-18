@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrandAIchemy — Commercial Clarity for E-Commerce Brands</title>
+  <meta name="description" content="BrandAIchemy identifies where your brand, store, and product logic fail to create choice — and rebuilds the system so buyers understand why to choose you.">
+  <link rel="stylesheet" href="style.css">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://brandaichemy.com/">
+  <meta property="og:title" content="BrandAIchemy — Commercial Clarity for E-Commerce Brands">
+  <meta property="og:description" content="You've optimized everything. Why isn't the market responding? BrandAIchemy identifies where your brand, store, and product logic fail to create choice.">
+  <meta property="og:url" content="https://brandaichemy.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BrandAIchemy">
+  <meta property="og:image" content="https://brandaichemy.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BrandAIchemy — Commercial Clarity for E-Commerce Brands">
+  <meta name="twitter:description" content="You've optimized everything. Why isn't the market responding?">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://brandaichemy.com/#website",
+        "url": "https://brandaichemy.com/",
+        "name": "BrandAIchemy",
+        "description": "Commercial Clarity for E-Commerce Brands",
+        "publisher": { "@id": "https://brandaichemy.com/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://brandaichemy.com/#organization",
+        "name": "BrandAIchemy",
+        "legalName": "Ecomlana Ltd",
+        "url": "https://brandaichemy.com",
+        "logo": "https://brandaichemy.com/logo.png",
+        "description": "A commercial clarity practice for e-commerce brands. We identify where your brand, store, and product logic fail to create choice — and rebuild the system so buyers, search engines, and AI models understand why to choose you.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "4th Floor, Silverstream House, 45 Fitzroy Street",
+          "addressLocality": "London",
+          "postalCode": "W1T 6EB",
+          "addressCountry": "GB"
+        },
+        "email": "hello@brandaichemy.com",
+        "areaServed": "Worldwide",
+        "knowsAbout": ["E-commerce strategy", "Brand positioning", "Commercial clarity", "Shopify optimisation", "Amazon brand strategy", "Choice architecture", "AI readability"]
+      }
+    ]
+  }
+  </script>
+  <style>
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 var(--pad) 7rem;
+      position: relative;
+    }
+    #hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 55% at 80% 20%, rgba(201,168,122,.06) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 40% at 10% 85%, rgba(201,168,122,.04) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero-kicker {
+      font-size: .6875rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2.75rem;
+    }
+    .hero-sub {
+      font-size: 1.125rem;
+      color: var(--dim);
+      max-width: 540px;
+      line-height: 1.8;
+      margin: 2.75rem 0 3.25rem;
+    }
+    .hero-actions { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+
+    /* INSIGHT */
+    .insight-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3.75vw, 3.25rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.25;
+      max-width: 860px;
+      margin-bottom: 2.25rem;
+    }
+    .insight-quote b { font-style: normal; color: var(--gold); font-weight: 400; }
+
+    /* SYMPTOMS */
+    .sym-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: 1px solid var(--gold-line);
+      margin-top: 3.5rem;
+    }
+    .sym {
+      display: flex; align-items: flex-start; gap: 1.125rem;
+      padding: 1.5rem 3.5rem 1.5rem 0;
+      border-bottom: 1px solid var(--gold-line);
+    }
+    .sym:nth-child(even) { padding-left: 3.5rem; padding-right: 0; border-left: 1px solid var(--gold-line); }
+    .sym-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); flex-shrink: 0; margin-top: 9px; }
+    .sym-text { font-size: 1rem; color: var(--dim); line-height: 1.55; }
+
+    /* SERVICES PREVIEW */
+    .svc-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 1.5rem;
+      margin-top: 3.75rem;
+    }
+    .svc-price { font-size: .6875rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .svc-title { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 400; line-height: 1.15; margin-bottom: .625rem; }
+    .svc-for { font-size: .75rem; color: var(--gray); letter-spacing: .05em; margin-bottom: 1.125rem; }
+    .svc-desc { font-size: .9375rem; color: var(--dim); line-height: 1.75; margin-bottom: 1.5rem; }
+    .svc-link { font-size: .8125rem; color: var(--gold); text-decoration: none; letter-spacing: .04em; transition: opacity .25s; }
+    .svc-link:hover { opacity: .7; }
+
+    /* HOW */
+    .steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 5rem; margin-top: 4.5rem; }
+    .step-num { font-family: 'Cormorant Garamond', serif; font-size: 5rem; font-weight: 300; color: rgba(201,168,122,.18); line-height: 1; margin-bottom: 1.625rem; }
+    .step-title { font-family: 'Cormorant Garamond', serif; font-size: 1.875rem; font-weight: 400; margin-bottom: .875rem; }
+    .step-desc { font-size: .9375rem; color: var(--dim); line-height: 1.75; }
+
+    /* WHO */
+    .who-wrap { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--gold-line); border-radius: 3px; overflow: hidden; margin-top: 4rem; }
+    .who-col { padding: 3rem 3.25rem; }
+    .who-col:first-child { border-right: 1px solid var(--gold-line); }
+    .who-tag { font-size: .6875rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin-bottom: .75rem; }
+    .who-title { font-family: 'Cormorant Garamond', serif; font-size: 1.75rem; font-weight: 400; margin-bottom: 2rem; }
+    .who-list { list-style: none; }
+    .who-list li { padding: .875rem 0; border-bottom: 1px solid var(--gold-line); font-size: .9375rem; color: var(--dim); display: flex; align-items: flex-start; gap: .875rem; line-height: 1.5; }
+    .who-list li:last-child { border-bottom: none; }
+    .who-list li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); flex-shrink: 0; margin-top: 7px; }
+
+    /* CLIENTS */
+    .clients-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.25rem; margin-top: 3.75rem; }
+    .client { border: 1px solid var(--gold-line); border-radius: 3px; padding: 2rem 1.875rem; }
+    .client-name { font-family: 'Cormorant Garamond', serif; font-size: 1.375rem; font-weight: 400; margin-bottom: .375rem; }
+    .client-meta { font-size: .6875rem; text-transform: uppercase; letter-spacing: .1em; color: var(--gold); margin-bottom: 1.125rem; }
+    .client-quote { font-size: .875rem; color: var(--dim); line-height: 1.7; font-style: italic; }
+
+    /* CTA STRIP */
+    .cta-strip {
+      background: var(--surface);
+      border-top: 1px solid var(--gold-line);
+      border-bottom: 1px solid var(--gold-line);
+      padding: 6rem var(--pad);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+    .cta-strip .serif-lg { margin-bottom: 0; max-width: 600px; }
+
+    @media (max-width: 900px) {
+      .sym-grid { grid-template-columns: 1fr; }
+      .sym:nth-child(even) { padding-left: 0; border-left: none; }
+      .svc-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr; gap: 3rem; }
+      .who-wrap { grid-template-columns: 1fr; }
+      .who-col:first-child { border-right: none; border-bottom: 1px solid var(--gold-line); }
+      .clients-grid { grid-template-columns: 1fr 1fr; }
+      .cta-strip { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 520px) {
+      .clients-grid { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="index.html" class="logo">Brand<span>AI</span>chemy</a>
+  <ul class="nav-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="nav-cta">Book a call</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <p class="hero-kicker">Commercial Clarity for E-Commerce Brands</p>
+  <h1 class="serif-xl">
+    You've optimized<br>
+    everything. Why isn't<br>
+    the market <em>responding?</em>
+  </h1>
+  <p class="hero-sub">BrandAIchemy identifies where your brand, store, and product logic stop creating choice — and rebuilds the system so buyers, search engines, and AI models can clearly understand why to choose you.</p>
+  <div class="hero-actions">
+    <a href="contact.html" class="btn-gold">Start with a diagnosis</a>
+    <a href="services.html" class="btn-outline">Explore services →</a>
+  </div>
+</section>
+
+<section class="surface">
+  <p class="label">The core insight</p>
+  <p class="insight-quote fi">
+    When your brand doesn't send a clear signal to a human,<br>
+    <b>AI won't correct that.</b><br>
+    It will only expose the weakness faster.
+  </p>
+  <p class="body-text fi" style="transition-delay:.15s">Most brands focus on optimization: SEO, AI-generated content, polished ads. But optimization amplifies what's already there. If the brand doesn't have a clear reason to be chosen, no layer of optimization creates one.</p>
+</section>
+
+<hr class="rule">
+
+<section>
+  <p class="label">Does this resonate?</p>
+  <h2 class="serif-lg fi">Your brand looks optimized.<br>But it's not being chosen.</h2>
+  <div class="sym-grid">
+    <div class="sym fi"><span class="sym-dot"></span><span class="sym-text">Traffic exists. Purchases don't.</span></div>
+    <div class="sym fi"><span class="sym-dot"></span><span class="sym-text">Product cards are filled. Choice doesn't emerge.</span></div>
+    <div class="sym fi"><span class="sym-dot"></span><span class="sym-text">Ads are working harder and costing more.</span></div>
+    <div class="sym fi"><span class="sym-dot"></span><span class="sym-text">Buyers can't compare your products. They call to ask.</span></div>
+    <div class="sym fi"><span class="sym-dot"></span><span class="sym-text">Your brand sounds like every other brand in the category.</span></div>
+    <div class="sym fi"><span class="sym-dot"></span><span class="sym-text">AI tools gave you a strategy. The market didn't respond.</span></div>
+    <div class="sym fi"><span class="sym-dot"></span><span class="sym-text">You're competing on price, not on value.</span></div>
+    <div class="sym fi"><span class="sym-dot"></span><span class="sym-text">You explain your brand's value manually. Every time.</span></div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <p class="label">Services</p>
+  <h2 class="serif-lg fi">Four ways to work<br>with BrandAIchemy</h2>
+  <div class="svc-grid">
+    <div class="card fi">
+      <p class="svc-price">From £1,500</p>
+      <h3 class="svc-title">Brand Clarity Diagnosis</h3>
+      <p class="svc-for">Shopify · Amazon · Etsy · DTC · Founder-led brands</p>
+      <p class="svc-desc">We identify where your brand fails to create trust, differentiation, and a clear reason to be chosen.</p>
+      <a href="services.html#brand-diagnosis" class="svc-link">Full details →</a>
+    </div>
+    <div class="card fi" style="transition-delay:.1s">
+      <p class="svc-price">From £2,000</p>
+      <h3 class="svc-title">Product Choice Diagnosis</h3>
+      <p class="svc-for">B2B · Catalogues · Technical categories · Amazon-heavy</p>
+      <p class="svc-desc">We find where product data, filters, and card logic prevent buyers from making a confident decision.</p>
+      <a href="services.html#product-diagnosis" class="svc-link">Full details →</a>
+    </div>
+    <div class="card fi" style="transition-delay:.2s">
+      <p class="svc-price">From £5,000</p>
+      <h3 class="svc-title">Choice Architecture</h3>
+      <p class="svc-for">Full strategic rebuild · Brand and store restructure</p>
+      <p class="svc-desc">We redesign the entire system of choice — positioning, trust, store logic, product pages.</p>
+      <a href="services.html#architecture" class="svc-link">Full details →</a>
+    </div>
+    <div class="card fi" style="transition-delay:.3s">
+      <p class="svc-price">From £8,000</p>
+      <h3 class="svc-title">Full Implementation</h3>
+      <p class="svc-for">Strategy + execution · Shopify · Multi-channel</p>
+      <p class="svc-desc">We don't just tell you what to fix. We build it — Shopify, product pages, content, architecture.</p>
+      <a href="services.html#implementation" class="svc-link">Full details →</a>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="surface">
+  <p class="label">How we work</p>
+  <h2 class="serif-lg fi">We find where choice<br>breaks down. Then we<br>rebuild the system.</h2>
+  <div class="steps">
+    <div class="fi">
+      <div class="step-num">01</div>
+      <h3 class="step-title">Identify the breakdown</h3>
+      <p class="step-desc">We pinpoint exactly where buyers lose clarity — in positioning, product logic, store structure, or data. A documented map of failure points, not assumptions.</p>
+    </div>
+    <div class="fi" style="transition-delay:.12s">
+      <div class="step-num">02</div>
+      <h3 class="step-title">Diagnose the cause</h3>
+      <p class="step-desc">We explain why choice isn't emerging: weak differentiation, unclear UVP, missing trust signals, product data that describes but doesn't help decide.</p>
+    </div>
+    <div class="fi" style="transition-delay:.24s">
+      <div class="step-num">03</div>
+      <h3 class="step-title">Rebuild for clarity</h3>
+      <p class="step-desc">Positioning, offer logic, store structure, product pages — rebuilt so the buyer, the search engine, and the AI model all receive a clear, convincing signal.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <p class="label">Who we work with</p>
+  <h2 class="serif-lg fi">Two entry points.<br>One question.</h2>
+  <p class="body-text fi" style="transition-delay:.1s">Whether the brand isn't being chosen or the product isn't being chosen — the root problem is the same: the signal isn't clear enough to create a confident decision.</p>
+  <div class="who-wrap fi" style="transition-delay:.2s">
+    <div class="who-col">
+      <p class="who-tag">Entry A</p>
+      <h3 class="who-title">Brand isn't being chosen</h3>
+      <ul class="who-list">
+        <li>Shopify brands with traffic but weak conversion</li>
+        <li>Amazon brands expanding to own website</li>
+        <li>Etsy brands transitioning to Shopify</li>
+        <li>DTC brands competing on price instead of value</li>
+        <li>Founder-led brands with generic positioning</li>
+        <li>Brands where AI tools created confidence, not results</li>
+      </ul>
+    </div>
+    <div class="who-col">
+      <p class="who-tag">Entry B</p>
+      <h3 class="who-title">Product isn't being chosen</h3>
+      <ul class="who-list">
+        <li>B2B e-commerce with complex product catalogues</li>
+        <li>Manufacturers and distributors</li>
+        <li>Amazon-heavy brands with technical categories</li>
+        <li>Stores where buyers need to compare specifications</li>
+        <li>Multi-SKU brands where data is complete but choice isn't</li>
+        <li>Businesses where support handles questions buyers should answer alone</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="surface">
+  <p class="label">Clients</p>
+  <h2 class="serif-lg fi">Brands that chose clarity<br>over optimization.</h2>
+  <div class="clients-grid">
+    <div class="client fi">
+      <h4 class="client-name">Takeasy</h4>
+      <p class="client-meta">USA · Bags & Accessories</p>
+      <p class="client-quote">"The work gave us a clear picture of why our positioning wasn't converting — and a concrete path forward."</p>
+    </div>
+    <div class="client fi" style="transition-delay:.08s">
+      <h4 class="client-name">Ehouse</h4>
+      <p class="client-meta">USA · Home Goods</p>
+      <p class="client-quote">"We finally understood why buyers were visiting but not purchasing. The diagnosis changed how we think about the store."</p>
+    </div>
+    <div class="client fi" style="transition-delay:.16s">
+      <h4 class="client-name">Mamarissa</h4>
+      <p class="client-meta">USA · Personal Care</p>
+      <p class="client-quote">"Not another audit. A clear explanation of where our brand signal was breaking down and how to rebuild it."</p>
+    </div>
+    <div class="client fi" style="transition-delay:.24s">
+      <h4 class="client-name">Electrolight</h4>
+      <p class="client-meta">Canada · Lighting</p>
+      <p class="client-quote">"The product choice diagnosis showed exactly where buyers were dropping off — and why the data wasn't helping them decide."</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta-strip">
+  <h2 class="serif-lg">Ready to find where<br>choice breaks down?</h2>
+  <a href="contact.html" class="btn-gold">Start with a diagnosis</a>
+</div>
+
+<footer>
+  <a href="index.html" class="foot-logo">Brand<span>AI</span>chemy</a>
+  <ul class="foot-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+  </ul>
+  <span class="foot-copy">© 2025 BrandAIchemy</span>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 80); }, { passive: true });
+  const io = new IntersectionObserver(e => e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('on'); io.unobserve(x.target); } }), { threshold: 0.12 });
+  document.querySelectorAll('.fi').forEach((el, i) => {
+    if (el.closest('.sym-grid')) el.style.transitionDelay = (Array.from(el.parentElement.children).indexOf(el) * 0.055) + 's';
+    io.observe(el);
+  });
+</script>
+</body>
+</html>
