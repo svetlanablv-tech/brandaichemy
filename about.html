@@ -151,6 +151,52 @@
     }
     .stat-desc { font-size: .875rem; color: var(--dim); line-height: 1.6; }
 
+    .founder-section { padding: 7rem var(--pad); }
+    .founder-grid {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 6rem;
+      align-items: start;
+    }
+    .founder-photo-wrap {
+      width: 100%;
+      aspect-ratio: 4/5;
+      overflow: hidden;
+      border-radius: 2px;
+      background: var(--surface);
+      border: 1px solid var(--gold-line);
+    }
+    .founder-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      filter: grayscale(15%);
+      display: block;
+    }
+    .founder-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+      letter-spacing: .01em;
+      color: var(--white);
+      margin: .75rem 0 .5rem;
+      line-height: 1.15;
+    }
+    .founder-role {
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: .13em;
+      color: var(--gold);
+      margin-bottom: 2.5rem;
+    }
+    .founder-bio p {
+      font-size: 1.0625rem;
+      color: var(--dim);
+      line-height: 1.85;
+      margin-bottom: 1.25rem;
+    }
+
     .cta-strip {
       background: var(--black);
       border-top: 1px solid var(--gold-line);
@@ -168,6 +214,8 @@
       .cred-grid { grid-template-columns: 1fr 1fr; }
       .why-grid { grid-template-columns: 1fr; gap: 3rem; }
       .cta-strip { flex-direction: column; align-items: flex-start; }
+      .founder-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .founder-photo-wrap { max-width: 280px; }
     }
     @media (max-width: 520px) {
       .cred-grid { grid-template-columns: 1fr; }
@@ -211,6 +259,24 @@
     And no amount of optimization fixes an unclear brand."
   </blockquote>
 </div>
+
+<section class="founder-section">
+  <div class="founder-grid">
+    <div class="founder-photo-wrap fi">
+      <img src="lana.jpg" alt="Svetlana (Lana) Belova — Founder, BrandAIchemy" class="founder-photo">
+    </div>
+    <div class="fi" style="transition-delay:.15s">
+      <p class="label">Founder</p>
+      <h2 class="founder-name">Svetlana (Lana) Belova</h2>
+      <p class="founder-role">Founder &amp; Principal</p>
+      <div class="founder-bio">
+        <p>Lana has spent 16 years working inside the commercial logic of e-commerce — not on the edges of it. Starting in 2010, long before the tools became sophisticated, she built a systematic approach to one question: why do brands that look right fail to convert?</p>
+        <p>In 2018 she founded Ecomlana, which grew into a full-service strategy and education agency through client demand rather than marketing. Since then she has conducted over 1,200 consulting sessions with brands across Shopify, Amazon, Etsy, and direct-to-consumer channels.</p>
+        <p>BrandAIchemy is the practice she built around her core diagnostic methodology — the structured work of identifying where commercial clarity fails and rebuilding the system that creates it. It is the advisory layer: strategic, diagnostic, and built for brands that need more than optimisation.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="principles">
   <p class="label">Our approach</p>
