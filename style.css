@@ -38,28 +38,24 @@ nav {
   position: fixed;
   top: 3px; left: 0; right: 0;
   z-index: 200;
-  padding: 2.5rem var(--pad);
+  padding: 2rem var(--pad);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: background .4s, border-bottom .4s;
-}
-nav.scrolled, nav.solid {
-  background: rgba(13,13,13,.96);
+  background: rgba(13,13,13,.97);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--gold-line);
+  transition: background .4s;
 }
 .logo {
-  display: flex;
-  align-items: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  letter-spacing: .03em;
+  color: var(--white);
   text-decoration: none;
 }
-.logo-img {
-  height: 56px;
-  width: auto;
-  max-width: 260px;
-  display: block;
-}
+.logo span { color: var(--gold); }
 .nav-links {
   display: flex;
   align-items: center;
