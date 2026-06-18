@@ -26,11 +26,19 @@ body {
 }
 
 /* ── NAV ── */
-nav {
+body::before {
+  content: '';
   position: fixed;
   top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  z-index: 300;
+}
+nav {
+  position: fixed;
+  top: 3px; left: 0; right: 0;
   z-index: 200;
-  padding: 2.25rem var(--pad);
+  padding: 2.5rem var(--pad);
   display: flex;
   align-items: center;
   justify-content: space-between;
