@@ -137,7 +137,7 @@ section { padding: 7.5rem var(--pad); }
 }
 .serif-xl {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(3.75rem, 7.5vw, 7rem);
+  font-size: clamp(3rem, 5.5vw, 5.5rem);
   font-weight: 300;
   line-height: 1.03;
   letter-spacing: -.015em;
