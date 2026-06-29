@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap');
 
 :root {
-  --black:     #0D0D0D;
-  --surface:   #151515;
-  --surface-2: #1C1C1C;
-  --white:     #F2EDE4;
-  --dim:       rgba(242,237,228,.55);
-  --gold:      #C9A87A;
-  --gold-dim:  rgba(201,168,122,.22);
-  --gold-line: rgba(201,168,122,.16);
-  --gray:      #525252;
-  --pad:       5rem;
+  --black:        #0D0D0D;
+  --surface:      #151515;
+  --surface-2:    #1C1C1C;
+  --surface-light:#F2EDE4;
+  --white:        #F2EDE4;
+  --dim:          rgba(242,237,228,.55);
+  --gold:         #C9A87A;
+  --gold-dark:    #7A5530;
+  --gold-dim:     rgba(201,168,122,.22);
+  --gold-line:    rgba(201,168,122,.16);
+  --gray:         #525252;
+  --dark-text:    #1A1208;
+  --dark-dim:     rgba(26,18,8,.58);
+  --dark-line:    rgba(26,18,8,.12);
+  --pad:          5rem;
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -125,7 +130,31 @@ footer {
 /* ── LAYOUT ── */
 section { padding: 7.5rem var(--pad); }
 .rule { border: none; border-top: 1px solid var(--gold-line); margin: 0 var(--pad); }
-.surface { background: var(--surface); }
+.surface { background: var(--surface-light); color: var(--dark-text); }
+
+/* Text overrides inside light sections */
+.surface .label                        { color: var(--gold-dark); }
+.surface .serif-xl,
+.surface .serif-lg,
+.surface .serif-md                     { color: var(--dark-text); }
+.surface .body-text,
+.surface .body-wide                    { color: var(--dark-dim); }
+.surface .insight-quote                { color: var(--dark-text); }
+.surface .insight-quote b              { color: var(--gold-dark); }
+.surface .step-num                     { color: rgba(26,18,8,.10); }
+.surface .step-title                   { color: var(--dark-text); }
+.surface .step-desc                    { color: var(--dark-dim); }
+.surface .who-wrap                     { border-color: var(--dark-line); }
+.surface .who-col:first-child          { border-color: var(--dark-line); }
+.surface .who-tag                      { color: var(--gold-dark); }
+.surface .who-title                    { color: var(--dark-text); }
+.surface .who-list li                  { color: var(--dark-dim); border-color: var(--dark-line); }
+.surface .who-list li::before          { background: var(--gold-dark); }
+.surface .client                       { border-color: var(--dark-line); background: rgba(26,18,8,.04); }
+.surface .client:hover                 { border-color: rgba(26,18,8,.25); background: rgba(26,18,8,.07); }
+.surface .client-name                  { color: var(--dark-text); }
+.surface .client-meta                  { color: var(--gold-dark); }
+.surface .client-quote                 { color: var(--dark-dim); }
 
 /* ── TYPE ── */
 .label {
