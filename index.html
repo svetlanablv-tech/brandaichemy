@@ -133,6 +133,10 @@
     }
     .proof-desc { font-size: .875rem; color: var(--dim); line-height: 1.6; margin-bottom: .75rem; }
     .proof-tag { font-size: .6875rem; text-transform: uppercase; letter-spacing: .1em; color: var(--gold); }
+    .surface .proof-card  { border-top-color: var(--gold-dark); }
+    .surface .proof-result { color: var(--dark-text); }
+    .surface .proof-desc   { color: var(--dark-dim); }
+    .surface .proof-tag    { color: var(--gold-dark); }
 
     /* FOR YOU / NOT FOR YOU */
     .filter-grid {
@@ -143,7 +147,7 @@
     }
     .filter-col {
       padding: 3rem;
-      background: var(--surface);
+      background: var(--surface-2);
     }
     .filter-col:first-child { border-right: none; }
     .filter-heading {
@@ -306,7 +310,7 @@
 <hr class="rule">
 
 <!-- PROOF -->
-<section>
+<section class="surface">
   <p class="label fi">Results that compound</p>
   <h2 class="serif-lg fi" style="transition-delay:.08s">Brands that own<br>their ground now.</h2>
   <p class="body-text fi" style="transition-delay:.14s">Organic and LLM traffic — measurable in GA4, growing without ad spend. Not absolute numbers in isolation, but trajectories. Because a new domain at month 1 with 13 LLM visits is not the same story as zero.</p>
@@ -333,7 +337,7 @@
 </section>
 
 <!-- FOR YOU / NOT FOR YOU -->
-<section class="surface">
+<section>
   <p class="label fi">Before you go further</p>
   <h2 class="serif-lg fi" style="transition-delay:.08s">This is built for one<br>specific situation.</h2>
   <div class="filter-grid fi" style="transition-delay:.18s">
@@ -380,28 +384,6 @@
       <p class="svc-desc">Brand strategy, positioning, and a site built for AI-visibility from the first line of code. LLM architecture, structured data, trusted source presence — correct from the start.</p>
       <p class="svc-timeline">10–14 weeks build + 6 months monitoring · Results: 6–12 months</p>
       <a href="/services/" class="svc-link">Full details →</a>
-    </div>
-  </div>
-</section>
-
-<!-- LANA -->
-<section>
-  <p class="label fi">Who's behind this</p>
-  <div class="lana-grid fi" style="transition-delay:.08s">
-    <img src="/lana.jpg" alt="Lana Belova, brandAIchemy" class="lana-photo">
-    <div class="lana-text">
-      <h2 class="serif-md">Lana Belova</h2>
-      <p class="lana-bio">I built brands on Amazon before I understood what a brand actually is. I know what it feels like to wake up to a suspended account, to watch a competitor copy your listing, to realise the platform you built on doesn't belong to you.</p>
-      <p class="lana-bio">I spent years learning how AI systems — search engines, LLMs, recommendation algorithms — decide what to surface and what to ignore. And how to make a brand impossible to overlook without paying for every visit.</p>
-      <p class="lana-bio">I work directly with founders. No account managers, no junior team. One person who has done this, judges every decision, and owns the result.</p>
-      <div class="lana-creds">
-        <span class="cred">Amazon Partner</span>
-        <span class="cred">Shopify Partner</span>
-        <span class="cred">Best Education in E-commerce 2025</span>
-        <span class="cred">14 brands</span>
-        <span class="cred">7 published cases</span>
-      </div>
-      <a href="/about/" class="btn-outline">Full story →</a>
     </div>
   </div>
 </section>
