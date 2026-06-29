@@ -81,19 +81,20 @@
 </head>
 <body>
 
-<nav class="solid">
-  <a href="/" class="logo">Brand<span>AI</span>chemy</a>
+<nav id="nav">
+  <a href="/" class="logo">brand<span>AI</span>chemy</a>
   <ul class="nav-links">
+    <li><a href="/">Home</a></li>
     <li><a href="/services/">Services</a></li>
     <li><a href="/about/">About</a></li>
-    <li><a href="/contact/" class="nav-cta active">Book a call</a></li>
+    <li><a href="/contact/" class="nav-cta active">Let's talk</a></li>
   </ul>
 </nav>
 
 <div class="page-hero">
-  <p class="label">Get in touch</p>
-  <h1 class="serif-lg">Ready to find where<br>choice breaks down?</h1>
-  <p class="body-text">Tell us what's not working. We'll identify exactly where your brand or product loses clarity — and what it costs you.</p>
+  <p class="label fi">Contact</p>
+  <h1 class="serif-xl fi" style="transition-delay:.08s">Tell me about<br>your brand.</h1>
+  <p class="body-text fi" style="transition-delay:.18s; margin-top:1.75rem">I read every message and reply within 24 hours. No pitch, no sales call — just a real conversation.</p>
 </div>
 
 <div class="contact-layout">
@@ -146,12 +147,10 @@
       <div class="ff">
         <label for="f-service">I'm interested in</label>
         <select id="f-service">
-          <option value="">Select a service...</option>
-          <option>Brand Clarity Diagnosis — from £1,500</option>
-          <option>Product Choice Diagnosis — from £2,000</option>
-          <option>Choice Architecture — from £5,000</option>
-          <option>Full Implementation — from £8,000</option>
-          <option>Not sure yet — need a consultation</option>
+          <option value="">Select...</option>
+          <option>Rebuild — I have a site, it just doesn't work</option>
+          <option>Build — I don't have a D2C site yet</option>
+          <option>Not sure yet</option>
         </select>
       </div>
       <div class="ff">
@@ -159,7 +158,7 @@
         <textarea id="f-msg" placeholder="Describe the situation — traffic without sales, low conversion, brand positioning issues, product catalogue problems, or anything else that feels broken." required></textarea>
       </div>
       <p class="form-note">We respond within 1 business day. All information is kept strictly confidential.</p>
-      <button type="submit" class="btn-gold" id="submitBtn">Send message →</button>
+      <button type="submit" class="btn-gold" id="submitBtn">Send my story →</button>
     </form>
     <div class="form-success" id="formSuccess">
       <p>Message received.</p>
@@ -169,7 +168,7 @@
 </div>
 
 <footer>
-  <a href="/" class="foot-logo">Brand<span>AI</span>chemy</a>
+  <a href="/" class="foot-logo">brand<span>AI</span>chemy</a>
   <ul class="foot-links">
     <li><a href="/services/">Services</a></li>
     <li><a href="/about/">About</a></li>
@@ -177,10 +176,12 @@
     <li><a href="/privacy-policy/">Privacy Policy</a></li>
     <li><a href="/terms/">Terms</a></li>
   </ul>
-  <span class="foot-copy">© 2024 BrandAIchemy</span>
+  <span class="foot-copy">© 2026 Ecomlana Ltd, London UK</span>
 </footer>
 
 <script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 80); }, { passive: true });
   const io = new IntersectionObserver(e => e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('on'); io.unobserve(x.target); } }), { threshold: 0.1 });
   document.querySelectorAll('.fi').forEach(el => io.observe(el));
 
