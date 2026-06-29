@@ -137,6 +137,12 @@
     .surface .proof-result { color: var(--dark-text); }
     .surface .proof-desc   { color: var(--dark-dim); }
     .surface .proof-tag    { color: var(--gold-dark); }
+    .surface .pain-text              { color: var(--dark-dim); }
+    .surface .pain-text strong       { color: var(--dark-text); }
+    .surface .position-strip         { border-color: var(--dark-line); }
+    .surface .position-line          { color: var(--dark-text); }
+    .surface .position-line em       { color: var(--gold-dark); }
+    .surface .btn-outline            { color: var(--dark-text); border-color: rgba(26,18,8,.2); }
 
     /* FOR YOU / NOT FOR YOU */
     .filter-grid {
@@ -269,7 +275,6 @@
 <nav id="nav">
   <a href="/" class="logo">brand<span>AI</span>chemy</a>
   <ul class="nav-links">
-    <li><a href="/work/">Work</a></li>
     <li><a href="/services/">Services</a></li>
     <li><a href="/about/">About</a></li>
     <li><a href="/contact/" class="nav-cta">Let's talk</a></li>
@@ -290,8 +295,8 @@
   </div>
 </section>
 
-<!-- PAIN -->
-<section>
+<!-- PAIN + PROOF -->
+<section class="surface">
   <p class="label fi">The moment it changes</p>
   <p class="pain-text fi" style="transition-delay:.1s">
     You built a real product. You built real sales.<br>
@@ -305,15 +310,9 @@
       I work with sellers who've decided <em>one channel is one risk too many.</em>
     </p>
   </div>
-</section>
-
-<hr class="rule">
-
-<!-- PROOF -->
-<section class="surface">
-  <p class="label fi">Results that compound</p>
-  <h2 class="serif-lg fi" style="transition-delay:.08s">Brands that own<br>their ground now.</h2>
-  <p class="body-text fi" style="transition-delay:.14s">Organic and LLM traffic — measurable in GA4, growing without ad spend. Not absolute numbers in isolation, but trajectories. Because a new domain at month 1 with 13 LLM visits is not the same story as zero.</p>
+  <p class="label fi" style="transition-delay:.3s; margin-top: 4rem;">Results that compound</p>
+  <h2 class="serif-lg fi" style="transition-delay:.36s">Brands that own<br>their ground now.</h2>
+  <p class="body-text fi" style="transition-delay:.42s">Organic and LLM traffic — measurable in GA4, growing without ad spend. Not absolute numbers in isolation, but trajectories.</p>
   <div class="proof-grid">
     <div class="proof-card fi">
       <div class="proof-result">700+</div>
@@ -400,7 +399,6 @@
 <footer>
   <a href="/" class="foot-logo">brand<span>AI</span>chemy</a>
   <ul class="foot-links">
-    <li><a href="/work/">Work</a></li>
     <li><a href="/services/">Services</a></li>
     <li><a href="/about/">About</a></li>
     <li><a href="/contact/">Contact</a></li>
